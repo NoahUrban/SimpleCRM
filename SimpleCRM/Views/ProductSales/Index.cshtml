@@ -1,0 +1,116 @@
+﻿@model IEnumerable<ProductSales>
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h1 class="title" style="120px">Sales</h1>
+        </div>
+    </div>
+</div>
+<br />
+<div class="row">
+    <div class="col">
+        <h2 class="title">Processing</h2>
+    </div>
+    <div class="col-3 text-right" style="text-align: right;">
+        <a asp-controller="ProductSales" asp-action="AddOrder" class="btn btn-primary" role="button">Add Order</a>
+    </div>
+</div>
+<table class="table table-hover">
+    <tr class="table-dark">
+        <th scope="col">Order Number</th>
+        <th scope="col">Status</th>
+        <th scope="col">Customer Name</th>
+        <th scope="col">Order Date</th>
+        <th scope="col">Quantity Ordered</th>
+        <th scope="col">Price Each</th>
+        <th scope="col">Sales Revenue</th>
+        <th scope="col">Product Code</th>
+    </tr>
+
+    @foreach (var sale in @Model)
+    {
+        if (sale.Status == "In Process")
+        {
+            <tr>
+                <td scope="col">@sale.OrderNumber</td>
+                <td scope="col">@sale.Status</td>
+                <td scope="col">@sale.CustomerName</td>
+                <td scope="col">@sale.OrderDate</td>
+                <td scope="col">@sale.QuantityOrdered</td>
+                <td scope="col">@sale.PriceEach</td>
+                <td scope="col">@sale.Sales</td>
+                <td scope="col">@sale.ProductCode</td>
+            </tr>
+        }
+    }
+
+</table>
+
+<br />
+
+<h1 class="title">On Hold</h1>
+<table class="table table-hover">
+    <tr class="table-dark">
+        <th scope="col">Order Number</th>
+        <th scope="col">Status</th>
+        <th scope="col">Customer Name</th>
+        <th scope="col">Order Date</th>
+        <th scope="col">Quantity Ordered</th>
+        <th scope="col">Price Each</th>
+        <th scope="col">Sales Revenue</th>
+        <th scope="col">Product Code</th>
+    </tr>
+
+    @foreach (var sale in @Model)
+    {
+        if (sale.Status == "On Hold")
+        {
+            <tr>
+                <td scope="col">@sale.OrderNumber</td>
+                <td scope="col">@sale.Status</td>
+                <td scope="col">@sale.CustomerName</td>
+                <td scope="col">@sale.OrderDate</td>
+                <td scope="col">@sale.QuantityOrdered</td>
+                <td scope="col">@sale.PriceEach</td>
+                <td scope="col">@sale.Sales</td>
+                <td scope="col">@sale.ProductCode</td>
+            </tr>
+        }
+    }
+
+</table>
+
+<br />
+
+<h1 class="title">Shipped</h1>
+<table class="table table-hover">
+    <tr class="table-dark">
+        <th scope="col">Order Number</th>
+        <th scope="col">Status</th>
+        <th scope="col">Customer Name</th>
+        <th scope="col">Order Date</th>
+        <th scope="col">Quantity Ordered</th>
+        <th scope="col">Price Each</th>
+        <th scope="col">Sales Revenue</th>
+        <th scope="col">Product Code</th>
+    </tr>
+
+    @foreach (var sale in @Model)
+    {
+        if (sale.Status == "Shipped")
+        {
+            <tr>
+                <td scope="col">@sale.OrderNumber</td>
+                <td scope="col">@sale.Status</td>
+                <td scope="col">@sale.CustomerName</td>
+                <td scope="col">@sale.OrderDate</td>
+                <td scope="col">@sale.QuantityOrdered</td>
+                <td scope="col">@sale.PriceEach</td>
+                <td scope="col">@sale.Sales</td>
+                <td scope="col">@sale.ProductCode</td>
+            </tr>
+        }
+    }
+
+</table>

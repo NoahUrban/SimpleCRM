@@ -1,0 +1,60 @@
+﻿@model IEnumerable<Contact>
+
+<h2 class="title">Contacts</h2>
+
+<div class="row">
+    <div class="col">
+        @using (Html.BeginForm("Index", "Contacts", FormMethod.Get))
+        {
+            <div class="input-group" style="padding-right: 0;">
+                <input type="text" name="searchForm" class="form-control" placeholder="Search by Customer Name">
+                <div class="input-group-append">
+                    <button type="submit" class="btn btn-primary">Search</button>
+                </div>
+            </div>
+        }
+    </div>
+    <div class="col-auto" style="padding-left: 0;">
+        <div class="d-flex">
+            <a class="btn btn-primary"
+               asp-controller="Contacts"
+               asp-action="InsertContact"
+               role="button">+</a>
+        </div>
+    </div>
+</div>
+
+
+<br />
+
+<table class="table">
+    <tr>
+        <th></th>
+        <th>Customer Name</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Territory</th>
+        <th>Country</th>
+        <th>Zip Code</th>
+        <th>State</th>
+        <th>City</th>
+        <th>Primary Address</th>
+    </tr>
+
+    @foreach (var contact in Model)
+    {
+        <tr>
+            <td><a class="btn btn-primary btn-sm" asp-controller="Contacts" asp-action="ViewContact" asp-route-customerName="@contact.CustomerName">View</a></td>
+            <td>@contact.CustomerName</td>
+            <td>@contact.ContactFirstName</td>
+            <td>@contact.ContactLastName</td>
+            <td>@contact.Territory</td>
+            <td>@contact.Country</td>
+            <td>@contact.PostalCode</td>
+            <td>@contact.State</td>
+            <td>@contact.City</td>
+            <td>@contact.AddressLine1</td>
+        </tr>
+    }
+
+</table>

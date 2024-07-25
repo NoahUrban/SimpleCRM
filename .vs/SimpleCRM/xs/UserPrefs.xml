@@ -1,0 +1,48 @@
+﻿<Properties StartupConfiguration="{E80EA0C1-65E0-4580-936D-AEF6B6728905}|Default">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="SimpleCRM" expanded="True">
+            <Node name="SimpleCRM" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Contacts" expanded="True" />
+                <Node name="Home" expanded="True" />
+                <Node name="ProductSales" expanded="True" />
+                <Node name="Shared" expanded="True" />
+              </Node>
+            </Node>
+            <Node name="SimpleCRMTests" expanded="True">
+              <Node name="ContactControllerTests.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="SimpleCRM">
+            <Node name="SimpleCRMTests" expanded="True">
+              <Node name="SimpleCRM.Tests.Controllers" expanded="True">
+                <Node name="ContactsControllerTests" expanded="True" />
+                <Node name="ProductSalesControllerTests" expanded="True" />
+              </Node>
+              <Node name="SimpleCRM.Tests.Repositories" expanded="True">
+                <Node name="ContactRepositoryTests" expanded="True" />
+                <Node name="ProductSalesRepositoryTests" expanded="True" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.SimpleCRM PreferredExecutionTarget="/Applications/Google Chrome.app" />
+</Properties>

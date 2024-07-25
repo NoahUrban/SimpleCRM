@@ -1,0 +1,176 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/gboneurban/Desktop/Repos/SimpleCRM/SimpleCRMTests/SimpleCRMTests.csproj": {}
+  },
+  "projects": {
+    "/Users/gboneurban/Desktop/Repos/SimpleCRM/SimpleCRM/SimpleCRM.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/gboneurban/Desktop/Repos/SimpleCRM/SimpleCRM/SimpleCRM.csproj",
+        "projectName": "SimpleCRM",
+        "projectPath": "/Users/gboneurban/Desktop/Repos/SimpleCRM/SimpleCRM/SimpleCRM.csproj",
+        "packagesPath": "/Users/gboneurban/.nuget/packages/",
+        "outputPath": "/Users/gboneurban/Desktop/Repos/SimpleCRM/SimpleCRM/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/gboneurban/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/sdk/7.0.317/Sdks/Microsoft.NET.Sdk.Web/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.1.35, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.20, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.20, )"
+            },
+            "Microsoft.SqlServer.Server": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "bootstrap": {
+              "target": "Package",
+              "version": "[5.3.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.317/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/gboneurban/Desktop/Repos/SimpleCRM/SimpleCRMTests/SimpleCRMTests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/gboneurban/Desktop/Repos/SimpleCRM/SimpleCRMTests/SimpleCRMTests.csproj",
+        "projectName": "SimpleCRMTests",
+        "projectPath": "/Users/gboneurban/Desktop/Repos/SimpleCRM/SimpleCRMTests/SimpleCRMTests.csproj",
+        "packagesPath": "/Users/gboneurban/.nuget/packages/",
+        "outputPath": "/Users/gboneurban/Desktop/Repos/SimpleCRM/SimpleCRMTests/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/gboneurban/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/gboneurban/Desktop/Repos/SimpleCRM/SimpleCRM/SimpleCRM.csproj": {
+                "projectPath": "/Users/gboneurban/Desktop/Repos/SimpleCRM/SimpleCRM/SimpleCRM.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.5.0, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.20.70, )"
+            },
+            "coverlet.collector": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.2.0, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.2, )"
+            },
+            "xunit.runner.visualstudio": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.4.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.317/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
